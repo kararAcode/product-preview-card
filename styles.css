@@ -1,0 +1,129 @@
+body {
+    background: hsl(30, 38%, 92%);
+    padding: 0;
+    margin: 0;
+
+}
+
+.card {
+    width: 33%;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:50%;
+    left:50%;
+    background:hsl(0, 0%, 100%);
+    padding-bottom: 0;
+
+    display: flex;
+   
+}
+
+
+
+img {
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+}
+
+.content {
+    width: 50%;
+    padding: 0 15px;
+}
+
+h5 {
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 10px;
+    
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 0;
+
+}
+
+p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+
+}
+
+.price {
+    color : hsl(158, 36%, 37%);
+    font-size: 25px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.price > span {
+    color: hsl(228, 12%, 48%);
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-decoration: line-through;
+    vertical-align: middle;
+    margin-left: 10px;
+
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+button svg {
+    margin-right: 7px;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 30%);
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        content: url("images/image-product-mobile.jpg");
+        border-radius: 10px 10px 0 0 ;
+    }
+    
+    .content {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 11px;
+        width: 95%;
+    }
+
+    button {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
